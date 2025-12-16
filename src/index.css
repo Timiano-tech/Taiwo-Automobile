@@ -57,3 +57,155 @@ html {
         scale: 1;
     }
 }
+
+/* MEDIA QUERIES */
+
+
+
+
+ @media (max-width: 768px) {
+
+   
+    /* HEADER */
+  
+        .header {
+            background-color: whitesmoke;
+          padding: 10px 25px;
+        }
+
+        .nav__link {
+            position: relative;
+        }
+
+        .nav__link::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background-color: var(--GENERAL--COLOR);
+            position: absolute;
+            left: 0;
+            bottom: -.5rem;
+            transition: width .3s;
+        }
+
+            .header_ul li a:hover::after {
+                width: 90%;
+            }
+
+        .header__text {
+            max-width: 100%;
+        }
+        .header__text .t-autos {
+            white-space: nowrap;
+        }
+       
+        .header__text h2{
+            font-size: 4rem;
+        }
+      
+      .header__logo img {
+        width: 10%;
+       
+
+      }
+
+      
+      nav {
+        position: fixed;
+        left: 0;
+        top: 50px;
+        background-color: whitesmoke;
+        width: 100%;
+        padding: 8px 0 25px;
+        transform: translateX(-100%);
+       
+      }
+        .header_ul {
+        
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px; 
+        } 
+
+      
+        .header_ul li a {
+          font-size: 16px;
+          color: var(--GENERAL--COLOR);
+          text-shadow: none;
+        }
+
+      .hamburger {
+        display: inline;
+      }
+      
+
+
+
+
+
+/* HERO */
+.hero {
+    text-align: center;
+    background: linear-gradient(45deg, rgba(17, 17, 17, 0.87), rgba(0, 0, 0, 0.055)), url(img/Taiwo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+
+/* FEATURES */
+    .feauture__title {
+         flex-basis: 100%;
+}
+
+.title-text h2 {
+    font-size: 30px;
+}
+
+
+.feauture__img img {
+    width: 100%;
+}
+.feauture__img {
+    flex-basis: 100%;
+}
+
+
+/* SERVICE */
+.single__service {
+    flex-basis: 100%;
+    margin-bottom: 30px ;
+}
+
+.service__desc .service__p {
+    font-size: 12px;
+}
+hr {
+    margin: 5px auto;
+}
+.service__desc {
+    bottom: 25%; 
+
+    
+}
+.car__logos img {
+    width: 10%;
+}
+
+
+
+
+/* TESTIMONIAL */
+.testimonial__column {
+    flex-basis: 100%;
+}
+ }
