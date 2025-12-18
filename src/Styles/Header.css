@@ -60,3 +60,23 @@
     color: whitesmoke;
     font-weight: 400;
 }
+
+
+@media (max-width: 768px) {
+    .hero {
+    text-align: center;
+    background: linear-gradient(45deg, rgba(17, 17, 17, 0.87), rgba(0, 0, 0, 0.055)), url(img/Taiwo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+}

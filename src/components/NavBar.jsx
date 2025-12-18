@@ -1,7 +1,26 @@
 import React from 'react'
-import '../Styles/NavBar.css'
-
+import '../Styles/NavBar.css';
+import { useEffect } from 'react';
+import { Route } from 'react-router';
 const NavBar = () => {
+
+
+  useEffect(() => {
+    const navEl = document.querySelector('.header_nav');
+    const hamburgerEl = document.querySelector('.hamburger'); 
+
+    hamburgerEl.addEventListener('click', () => {
+      navEl.classList.toggle('nav--open');
+      hamburgerEl.classList.toggle('hamburger--open')
+    });
+
+    navEl.addEventListener('click', () => {
+      navEl.classList.remove('nav--open');
+      hamburgerEl.classList.remove('hamburger--open')
+    });   
+    
+  }, []);
+  
   return (
    <>
          <header className="header" >
