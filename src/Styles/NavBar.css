@@ -26,9 +26,11 @@
     width: 5%;
     background-color: var(--GENERAL--COLOR);
   }
-  .header__logo h2 a{
+  .header__logo  .nav__link{
     color: var(--GENERAL--COLOR);
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   nav {

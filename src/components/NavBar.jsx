@@ -11,9 +11,9 @@ const NavBar = () => {
        
 
         <div className="header__logo">
-          <Link to="/">
-            <img src="/Logo.png" alt="Logo"/>
-            <h2>T-Autos</h2>
+          <img src="/Logo.png" alt="Logo"/>
+          <Link to="/" className="nav__link">
+            T-Autos
           </Link>
         </div>
     
