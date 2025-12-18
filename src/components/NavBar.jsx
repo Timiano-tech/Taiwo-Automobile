@@ -1,25 +1,8 @@
-import React from 'react'
 import '../Styles/NavBar.css';
-import { useEffect } from 'react';
-import { Route } from 'react-router';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
 
 
-  useEffect(() => {
-    const navEl = document.querySelector('.header_nav');
-    const hamburgerEl = document.querySelector('.hamburger'); 
-
-    hamburgerEl.addEventListener('click', () => {
-      navEl.classList.toggle('nav--open');
-      hamburgerEl.classList.toggle('hamburger--open')
-    });
-
-    navEl.addEventListener('click', () => {
-      navEl.classList.remove('nav--open');
-      hamburgerEl.classList.remove('hamburger--open')
-    });   
-    
-  }, []);
   
   return (
    <>
@@ -28,17 +11,20 @@ const NavBar = () => {
        
 
         <div className="header__logo">
+          <Link to="/">
             <img src="/Logo.png" alt="Logo"/>
-            <h2><a href="#">T-Autos</a></h2>
-            
+            <h2>T-Autos</h2>
+          </Link>
         </div>
     
+
+
         <nav className="header_nav">
           <ul className="header_ul">
-            <li><a href="#home" className="nav__link nav_link2">Home</a></li>
-                <li><a href="#features" className="nav__link nav_link2">Features</a></li>
-                <li><a href="#service" className="nav__link nav_link2">Services</a></li>
-                <li><a href="#testimonial" className="nav__link nav_link2">Testimonial</a></li>
+            <li><Link to="/" className="nav__link nav_link2">Home</Link></li>
+                <li><Link to="/features" className="nav__link nav_link2">Features</Link></li>
+                <li><Link to="/service" className="nav__link nav_link2">Services</Link></li>
+                <li><Link to="/testimonial" className="nav__link nav_link2">Testimonial</Link></li>
           </ul>
         </nav>
     

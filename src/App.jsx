@@ -1,21 +1,23 @@
-import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
-import Header from './components/Header.jsx'; 
-import Features from './components/Features.jsx';
-import Services from './components/Services.jsx';
-import Testimonial from './components/Testimonial.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './routes/Header.jsx'; 
+import Features from './routes/Features.jsx';
+import Services from './routes/Services.jsx';
+import Testimonial from './routes/Testimonial.jsx';
+import Footer from './routes/Footer.jsx';
+
 
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <Header />
-      <Features />
-      <Services />
-      <Testimonial />
-      <Footer />
+        <NavBar />
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/service" element={<Services />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+      </Routes>
     </>
   )
 }
