@@ -103,3 +103,13 @@
     background-color: var(--GENERAL--COLOR);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .testimonial__row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial__column {
+        flex-basis: 100%;
+    }
+}

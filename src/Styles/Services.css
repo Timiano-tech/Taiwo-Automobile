@@ -83,3 +83,23 @@ hr {
 .car__logos img {
     width: 5%;
 }
+
+@media (max-width: 768px) {
+    /* SERVICE */
+.single__service {
+    flex-basis: 100%;
+    margin-bottom: 30px ;
+}
+
+.service__desc .service__p {
+    font-size: 12px;
+}
+hr {
+    margin: 5px auto;
+}
+.service__desc {
+    bottom: 25%; 
+
+    
+}
+}
