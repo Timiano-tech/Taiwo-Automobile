@@ -99,7 +99,9 @@ hr {
 }
 .service__desc {
     bottom: 25%; 
+}
 
-    
+.car__logos img {
+    width: 10%;
 }
 }
